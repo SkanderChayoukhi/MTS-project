@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="meta description">
+
+    <title>NFT Marketplace</title>
+
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!--== Google Fonts ==-->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" />
+
+    <!--=== Bootstrap CSS ===-->
+    <link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <!--=== Font-Awesome CSS ===-->
+    <link href="assets/css/vendor/font-awesome.css" rel="stylesheet">
+    <!--=== Plugins CSS ===-->
+    <link href="assets/css/plugins.css" rel="stylesheet">
+    <!--=== Main Style CSS ===-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/vip.css">
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!--== Header Area Start ==-->
+    <header id="header-area" class="header__3">
+        <div class="ruby-container">
+            <div class="row">
+                <!-- Logo Area Start -->
+                <div class="col-3 col-lg-1 col-xl-2 m-auto">
+                    <a href="index.html" class="logo-area">
+                        <img src="assets/img/logoBrand.png" alt="Logo" class="img-fluid" />
+                    </a>
+                </div>
+                <!-- Logo Area End -->
+
+                <!-- Navigation Area Start -->
+                <div class="col-3 col-lg-9 col-xl-8 m-auto">
+                    <div class="main-menu-wrap">
+                        <nav id="mainmenu">
+                            <ul>
+                                <li class="dropdown-show"><a href="index.html">Home</a>
+
+                                </li>
+                                <li class="dropdown-show"><a href="shop.html">Shop</a>
+
+                                </li>
+
+
+
+
+                                </li>
+                                <li class="dropdown-show"><a href="#">VIP</a>
+
+                                </li>
+                                <li><a href="connect.html">createNFT</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Navigation Area End -->
+
+                <!-- Header Right Meta Start -->
+                <div class="col-6 col-lg-2 m-auto">
+                    <div class="header-right-meta text-right">
+                        <ul>
+                            <li><a href="#" class="modal-active"><i class="fa fa-search"></i></a></li>
+                            <li class="settings"><a href="#"><i class="fa fa-cog"></i></a>
+                                <div class="site-settings d-block d-sm-flex">
+                                    <dl class="currency">
+                                        <dt>Currency</dt>
+                                        <dd class="current"><a href="#">USD</a></dd>
+                                        <dd><a href="#">AUD</a></dd>
+                                        <dd><a href="#">CAD</a></dd>
+                                        <dd><a href="#">BDT</a></dd>
+                                    </dl>
+
+                                    <dl class="my-account">
+                                        <dt>My Account</dt>
+                                        <dd><a href="#">Dashboard</a></dd>
+                                        <dd><a href="#">Profile</a></dd>
+                                        <dd><a href="#">Sign</a></dd>
+                                    </dl>
+
+                                    <dl class="language">
+                                        <dt>Language</dt>
+                                        <dd class="current"><a href="#">English (US)</a></dd>
+                                        <dd><a href="#">English (UK)</a></dd>
+                                        <dd><a href="#">Chinees</a></dd>
+                                        <dd><a href="#">Bengali</a></dd>
+                                        <dd><a href="#">Hindi</a></dd>
+                                        <dd><a href="#">Japanees</a></dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Header Right Meta End -->
+            </div>
+        </div>
+    </header>
+    <!--== Header Area End ==-->
+<body>
+    <!--== Search Box Area Start ==-->
+    <div class="body-popup-modal-area">
+        <span class="modal-close"><img src="assets/img/cancel.png" alt="Close" class="img-fluid" /></span>
+        <div class="modal-container d-flex">
+            <div class="search-box-area">
+                <div class="search-box-form">
+                    <form action="#" method="post">
+                        <input type="search" placeholder="type keyword and hit enter" />
+                        <button class="btn" type="button"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--== Search Box Area End ==-->
+
+    <!--== Banner // Slider Area Start ==-->
+    <section id="banner-area" class="banner__2">
+    
+        <!-- Main wrapper for the calendar application -->
+        <div class="wrapper">
+            <div class="container-calendar">
+                <div id="left">
+                    <h1>Dynamic Calendar</h1>
+                    <div id="event-section">
+                        <h3>Add Event</h3>
+                        <input type="date" id="eventDate">
+                        <input type="text" id="eventTitle" placeholder="Event Title">
+                        <input type="text" id="eventDescription" placeholder="Event Description">
+                        <button id="addEvent" onclick="addEvent()">
+                            Add
+                        </button>
+                    </div>
+                    <div id="reminder-section">
+                        <h3>Reminders</h3>
+                        <!-- List to display reminders -->
+                        <ul id="reminderList">
+                            <li data-event-id="1">
+                                <strong>Event Title</strong>
+                                - Event Description on Event Date
+                                <button class="delete-event" onclick="deleteEvent(1)">
+                                    Delete
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="right">
+                    <h3 id="monthAndYear"></h3>
+                    <div class="button-container-calendar">
+                        <button id="previous" onclick="previous()">
+                            ‹
+                        </button>
+                        <button id="next" onclick="next()">
+                            ›
+                        </button>
+                    </div>
+                    <table class="table-calendar" id="calendar" data-lang="en">
+                        <thead id="thead-month"></thead>
+                        <!-- Table body for displaying the calendar -->
+                        <tbody id="calendar-body"></tbody>
+                    </table>
+                    <div class="footer-container-calendar">
+                        <label for="month">Jump To: </label>
+                        <!-- Dropdowns to select a specific month and year -->
+                        <select id="month" onchange="jump()">
+                            <option value=0>Jan</option>
+                            <option value=1>Feb</option>
+                            <option value=2>Mar</option>
+                            <option value=3>Apr</option>
+                            <option value=4>May</option>
+                            <option value=5>Jun</option>
+                            <option value=6>Jul</option>
+                            <option value=7>Aug</option>
+                            <option value=8>Sep</option>
+                            <option value=9>Oct</option>
+                            <option value=10>Nov</option>
+                            <option value=11>Dec</option>
+                        </select>
+                        <!-- Dropdown to select a specific year -->
+                        <select id="year" onchange="jump()"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Include the JavaScript file for the calendar functionality -->
+    </section>
+    <!--== Banner Slider End ==-->
+<script src="Calendar5.js"></script>
+
+</body>
+   
+
+
+
+    <!-- Footer Area Start -->
+    <footer id="footer-area">
+        <!-- Footer Call to Action Start -->
+
+
+        <!-- Footer Follow Up Area Start -->
+        <div class="footer-followup-area">
+            <div class="ruby-container">
+                <div class="followup-wrapper">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="follow-content-wrap">
+                                <a href="index.html" class="logo"><img src="assets/img/logoBrand2.png" alt="logo" /></a>
+                                <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum</p>
+
+                                <div class="footer-social-icons">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-flickr"></i></a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Follow Up Area End -->
+
+        <!-- Footer Image Gallery Area Start -->
+        <div class="footer-image-gallery">
+            <div class="ruby-container">
+                <div class="image-gallery-wrapper">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="imgage-gallery-carousel owl-carousel">
+                                <div class="gallery-item">
+                                    <a href="#"><img src="assets/img/vr1.avif" alt="Gallery" /></a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="#"><img src="assets/img/vr5.jpg" alt="Gallery" /></a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="#"><img src="assets/img/vr4.jpg" alt="Gallery" /></a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="#"><img src="assets/img/vr3.webp" alt="Gallery" /></a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="#"><img src="assets/img/gallery-img-3.jpg" alt="Gallery" /></a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="#"><img src="assets/img/gallery-img-2.jpg" alt="Gallery" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Image Gallery Area End -->
+
+        <!-- Copyright Area Start -->
+        <!-- <div class="copyright-area">
+        <div class="ruby-container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+        <!-- Copyright Area End -->
+
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- Scroll to Top Start -->
+    <a href="#" class="scrolltotop"><i class="fa fa-angle-up"></i></a>
+    <!-- Scroll to Top End -->
+
+
+    <!--=======================Javascript============================-->
+    <!--=== Jquery Min Js ===-->
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <!--=== Jquery Migrate Min Js ===-->
+    <script src="assets/js/vendor/jquery-migrate-1.4.1.min.js"></script>
+    <!--=== Popper Min Js ===-->
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <!--=== Plugins Min Js ===-->
+    <script src="assets/js/plugins.js"></script>
+
+    <!--=== Active Js ===-->
+    <script src="./assets/js/vip.js"></script>
+</body>
+
+</html>
