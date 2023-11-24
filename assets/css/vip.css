@@ -35,7 +35,7 @@ body {
 }
 
 .container-calendar #left h1 {
-    color: green;
+    color: #733D84;
     text-align: center;
     background-color: #f2f2f2;
     margin: 0;
@@ -43,7 +43,7 @@ body {
 }
 
 #event-section h3 {
-    color: green;
+    color: #733D84;
     font-size: 18px;
     margin: 0;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 #event-section button {
-    background: green;
+    background: #733D84;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -108,7 +108,7 @@ body {
 }
 
 #reminder-section h3 {
-    color: green;
+    color: #733D84;
     font-size: 18px;
     margin: 0;
 }
@@ -137,9 +137,9 @@ body {
 /* Buttons in the calendar */
 .button-container-calendar button {
     cursor: pointer;
-    background: green;
+    background: #733D84;
     color: #fff;
-    border: 1px solid green;
+    border: 1px solid #733D84;
     border-radius: 4px;
     padding: 5px 10px;
 }
@@ -176,13 +176,13 @@ body {
 }
 
 .date-picker:nth-child(6) {
-    color: green;
+    color: #733D84;
     /* Friday */
 }
 
 /* Hover effect for date cells */
 .date-picker:hover {
-    background-color: green;
+    background-color: #733D84;
     color: white;
     cursor: pointer;
 }
