@@ -36,7 +36,7 @@ function performAction() {
     event.preventDefault();
 
     // Add your logic for the action you want to perform
-    alert('Action performed!');
+    
     
     // Redirect to contact.html
     window.location.href = 'contact.html';
