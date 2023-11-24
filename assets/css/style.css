@@ -1074,7 +1074,6 @@ address strong, address b {
 
 #mainmenu ul li.dropdown-show:after {
     color: #f4f5f7;
-    content: '\f107';
     display: block;
     font-family: "FontAwesome";
     position: absolute;
